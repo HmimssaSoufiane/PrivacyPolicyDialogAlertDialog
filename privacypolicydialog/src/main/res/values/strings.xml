@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">PrivacyPolicyDialog</string>
+    <string name="app_name">Privacy Policy - Dialog</string>
+    <string name="testTest">We want to inform you that our app personalizes your advertising experience though specific advertising networks by clicking continue your are agree to the\u0020 </string>
+    <string name="Dialog_title">ACCEPT TERMS</string>
+    <string name="Brand"> your Brand\u0020 </string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="accept">continue</string>
 </resources>
