@@ -69,13 +69,10 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="@dimen/dialog_valide_cancel_w"
             android:layout_height="@dimen/dialog_valide_cancel_h"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/dialog_border"
+            android:layout_margin="10dp"
+            android:background="@drawable/dialog_buttons_border"
             android:text="@string/accept"
-            android:textColor="#0000cc" />
+            android:textColor="#fff" />
 
 
     </LinearLayout>

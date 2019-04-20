@@ -52,8 +52,9 @@ public class PrivacyPolicyDialog extends AlertDialog {
 
 
 
-    public void _btnContinueOnClickListener(View.OnClickListener onClickListener){
+    public PrivacyPolicyDialog _btnContinueOnClickListener(View.OnClickListener onClickListener){
         btnAccept.setOnClickListener(onClickListener);
+        return this;
     }
     //
     public PrivacyPolicyDialog _setMessage(CharSequence message) {
@@ -103,8 +104,11 @@ public class PrivacyPolicyDialog extends AlertDialog {
 
 
 
-    public void Close() {
+    public void _close() {
         this.dismiss();
+    }
+    public void _show() {
+        this.show();
     }
 
 }
