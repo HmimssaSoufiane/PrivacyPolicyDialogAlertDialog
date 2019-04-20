@@ -25,16 +25,15 @@
             app:srcCompat="@drawable/ic_stop_1" />
 
         <TextView
-            android:id="@+id/dialogtitletextView1"
+            android:id="@+id/dialogtitletextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Dialog_title"
             android:textColor="#382d39"
             android:textSize="@dimen/Dialog_title" />
 
-
         <TextView
-            android:id="@+id/dialogtextView1"
+            android:id="@+id/dialogtextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -66,7 +65,7 @@
 
 
         <Button
-            android:id="@+id/dialogbtn1"
+            android:id="@+id/dialogbtn"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="@dimen/dialog_valide_cancel_w"
             android:layout_height="@dimen/dialog_valide_cancel_h"
