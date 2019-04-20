@@ -19,7 +19,7 @@
 	        implementation 'com.github.HmimssaSoufiane:PrivacyPolicyDialogAlertDialog:'
 		}
 ```
-# Step 2. Go to your splash and add this code(put privacy  url and you store name)
+# Step 2. Usage
 -
 
 ```
