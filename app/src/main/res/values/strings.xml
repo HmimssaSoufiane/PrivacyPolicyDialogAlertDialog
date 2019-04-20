@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PrivacyPolicyDialog-AlertDialog</string>
+    <string name="main_two">Main two</string>
 </resources>

@@ -37,18 +37,25 @@ public class PrivacyPolicyDialog extends AlertDialog {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        btnAccept.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i("show", "from button");
-                Close();
-            }
-        });
+//        btnAccept.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.i("show", "from button");
+//                DialogCheck._DialogSaveState();
+//                Close();
+//            }
+//        });
 
 
     }
 
 
+
+
+    public void _btnContinueOnClickListener(View.OnClickListener onClickListener){
+        btnAccept.setOnClickListener(onClickListener);
+    }
+    //
     public PrivacyPolicyDialog _setMessage(CharSequence message) {
         dialogtextView.setText(message);
         return this;
@@ -73,6 +80,28 @@ public class PrivacyPolicyDialog extends AlertDialog {
         mIcon.setImageResource(drawableResId);
         return this;
     }
+    /// R ID Methodes
+    public PrivacyPolicyDialog _setMessage(int message) {
+        dialogtextView.setText(message);
+        return this;
+    }
+
+    public PrivacyPolicyDialog _setBrandName(int brandName) {
+        textViewBrand.setText(brandName);
+        return this;
+    }
+
+    public PrivacyPolicyDialog _urlPrivacyPolicy(int url) {
+        urlPrivacyPolicy.setText(url);
+        return this;
+    }
+
+    public PrivacyPolicyDialog _setTitle(int text) {
+        dialogtitletextView.setText(text);
+        return this;
+    }
+
+
 
     public void Close() {
         this.dismiss();
