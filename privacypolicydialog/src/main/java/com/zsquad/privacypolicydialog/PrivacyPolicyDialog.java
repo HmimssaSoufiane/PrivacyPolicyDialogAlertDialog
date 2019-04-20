@@ -1,12 +1,9 @@
 package com.zsquad.privacypolicydialog;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
@@ -36,7 +33,6 @@ public class PrivacyPolicyDialog extends AlertDialog {
         dialogtextView = mDialogView.findViewById(R.id.dialogtextView);
         mIcon = mDialogView.findViewById(R.id.imageView);
         //
-
         this.setCancelable(false);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
