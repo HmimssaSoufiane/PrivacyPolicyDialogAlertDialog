@@ -35,17 +35,6 @@ public class PrivacyPolicyDialog extends AlertDialog {
         this.setCancelable(false);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
-//        btnAccept.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Log.i("show", "from button");
-//                DialogCheck._DialogSaveState();
-//                Close();
-//            }
-//        });
-
-
     }
 
 
