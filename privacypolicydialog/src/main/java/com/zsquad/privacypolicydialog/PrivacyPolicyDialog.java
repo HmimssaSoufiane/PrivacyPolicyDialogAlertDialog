@@ -1,9 +1,12 @@
 package com.zsquad.privacypolicydialog;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.Window;
@@ -20,6 +23,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
     private TextView dialogtextView;
     private ImageView mIcon;
     private SharedPreferences pref;
+    String _url;
 
     public PrivacyPolicyDialog(Context context) {
         super(context);
@@ -35,15 +39,28 @@ public class PrivacyPolicyDialog extends AlertDialog {
         this.setCancelable(false);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        urlPrivacyPolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent InfoIntent;
+                try {
+                    InfoIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(_url));
+                    getContext().startActivity(InfoIntent);
+
+                } catch (ActivityNotFoundException ignored) {
+
+                }
+            }
+        });
     }
 
 
-
-
-    public PrivacyPolicyDialog _btnContinueOnClickListener(View.OnClickListener onClickListener){
+    public PrivacyPolicyDialog _btnContinueOnClickListener(View.OnClickListener onClickListener) {
         btnAccept.setOnClickListener(onClickListener);
         return this;
     }
+
     //
     public PrivacyPolicyDialog _setMessage(CharSequence message) {
         dialogtextView.setText(message);
@@ -56,7 +73,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
     }
 
     public PrivacyPolicyDialog _urlPrivacyPolicy(String url) {
-        urlPrivacyPolicy.setText(url);
+        _url=url;
         return this;
     }
 
@@ -69,6 +86,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
         mIcon.setImageResource(drawableResId);
         return this;
     }
+
     /// R ID Methodes
     public PrivacyPolicyDialog _setMessage(int message) {
         dialogtextView.setText(message);
@@ -91,10 +109,10 @@ public class PrivacyPolicyDialog extends AlertDialog {
     }
 
 
-
     public void _close() {
         this.dismiss();
     }
+
     public void _show() {
         this.show();
     }
