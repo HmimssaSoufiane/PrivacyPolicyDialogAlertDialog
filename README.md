@@ -16,7 +16,7 @@
 # Step 2. Add the dependency
 ```
 	dependencies {
-	        implementation 'com.github.HmimssaSoufiane:PrivacyPolicyDialogAlertDialog:2.2.2'
+	        implementation 'com.github.HmimssaSoufiane:PrivacyPolicyDialogAlertDialog:3.0.0'
 		}
 ```
 # Step 2. Usage
@@ -41,6 +41,7 @@
             _dialog._setTitle("Privacy Policy").
                     _setMessage(R.string.dialogMessage).
                     _setBrandName("AraSoft ").
+		     _urlPrivacyPolicy("Your privacy url ").
                     _setIcon(R.drawable.ic_private_sign).
                     _btnContinueOnClickListener(new View.OnClickListener() {
                         @Override
