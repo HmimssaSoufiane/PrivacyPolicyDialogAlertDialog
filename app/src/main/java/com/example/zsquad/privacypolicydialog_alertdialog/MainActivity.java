@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
                     _setMessage(R.string.dialogMessage).
                     _setBrandName("AraSoft ").
                     _setIcon(R.drawable.ic_private_sign).
+                    _urlPrivacyPolicy("Your privacy url ").
                     _btnContinueOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {

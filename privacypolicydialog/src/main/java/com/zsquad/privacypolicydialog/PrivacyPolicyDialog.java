@@ -98,10 +98,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
         return this;
     }
 
-    public PrivacyPolicyDialog _urlPrivacyPolicy(int url) {
-        urlPrivacyPolicy.setText(url);
-        return this;
-    }
+
 
     public PrivacyPolicyDialog _setTitle(int text) {
         dialogtitletextView.setText(text);
