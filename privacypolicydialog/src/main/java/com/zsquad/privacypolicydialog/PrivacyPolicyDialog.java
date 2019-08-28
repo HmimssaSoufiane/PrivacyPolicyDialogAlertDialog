@@ -27,7 +27,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
 
     public PrivacyPolicyDialog(Context context) {
         super(context);
-        mDialogView = View.inflate(context, R.layout.dialog, null);
+        mDialogView = View.inflate(context, R.layout.dialog_2, null);
         setView(mDialogView);
         btnAccept = mDialogView.findViewById(R.id.dialogbtn);
         textViewBrand = mDialogView.findViewById(R.id.textViewBrand);
