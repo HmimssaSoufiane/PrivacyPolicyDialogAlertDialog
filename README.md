@@ -38,11 +38,11 @@
         if (!DialogCheck._DialogCheck()) {
 
             final PrivacyPolicyDialog _dialog = new PrivacyPolicyDialog(this);
-            _dialog._setTitle("Privacy Policy").
-                    _setMessage(R.string.dialogMessage).
+            _dialog._setTitle("Privacy Policy").//Dialog title- optional
+                    _setMessage(R.string.dialogMessage). //Dialog message- optional
                     _setBrandName("AraSoft ").
-		     _urlPrivacyPolicy("Your privacy url ").
-                    _setIcon(R.drawable.ic_private_sign).
+		     _urlPrivacyPolicy("Your privacy url ").//privacy url- required
+                    _setIcon(R.drawable.ic_private_sign).//Dialog icon- optional
                     _btnContinueOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
