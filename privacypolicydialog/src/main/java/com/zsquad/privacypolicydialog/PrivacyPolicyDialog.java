@@ -58,7 +58,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
         btnAccept.setOnClickListener(onClickListener);
         return this;
     }
-    public PrivacyPolicyDialog _urlPrivacyPolicy(String url) {
+    public PrivacyPolicyDialog _setURL(String url) {
         _url=url;
         return this;
     }
