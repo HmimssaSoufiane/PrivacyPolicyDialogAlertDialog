@@ -98,12 +98,6 @@ public class PrivacyPolicyDialog extends AlertDialog {
         return this;
     }
 
-
-
-
-
-
-
     public void _close() {
         this.dismiss();
     }
