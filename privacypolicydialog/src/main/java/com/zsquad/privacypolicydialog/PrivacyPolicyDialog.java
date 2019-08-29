@@ -22,7 +22,6 @@ public class PrivacyPolicyDialog extends AlertDialog {
     private TextView dialogtitletextView;
     private TextView dialogtextView;
     private ImageView mIcon;
-    private SharedPreferences pref;
     String _url;
 
     public PrivacyPolicyDialog(Context context) {
@@ -87,7 +86,6 @@ public class PrivacyPolicyDialog extends AlertDialog {
         return this;
     }
 
-    /// R ID Methodes
     public PrivacyPolicyDialog _setMessage(int message) {
         dialogtextView.setText(message);
         return this;
