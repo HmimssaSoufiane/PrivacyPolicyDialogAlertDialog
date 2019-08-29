@@ -62,6 +62,8 @@
                 android:id="@+id/textViewPrivacyPolicy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
                 android:text="@string/privacy_policy"
                 android:textColor="#33b5e5" />
 
