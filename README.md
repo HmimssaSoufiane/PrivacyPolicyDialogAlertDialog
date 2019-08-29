@@ -1,6 +1,6 @@
 # Privacy Policy Dialog
 
-<img src="Screenshot.png" width="250" >
+<img src="Screenshot2.png" width="250" >
 
 # Step 1. Add the JitPack repository to your build file
  Add it in your root build.gradle at the end of repositories:
