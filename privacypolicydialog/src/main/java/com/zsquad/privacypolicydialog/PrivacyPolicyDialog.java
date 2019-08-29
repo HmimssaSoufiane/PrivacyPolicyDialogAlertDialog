@@ -58,7 +58,10 @@ public class PrivacyPolicyDialog extends AlertDialog {
         btnAccept.setOnClickListener(onClickListener);
         return this;
     }
-
+    public PrivacyPolicyDialog _urlPrivacyPolicy(String url) {
+        _url=url;
+        return this;
+    }
     //
     public PrivacyPolicyDialog _setMessage(CharSequence message) {
         dialogtextView.setText(message);
@@ -77,11 +80,6 @@ public class PrivacyPolicyDialog extends AlertDialog {
 
     public PrivacyPolicyDialog _setBrandName(String brandName) {
         textViewBrand.setText(brandName);
-        return this;
-    }
-
-    public PrivacyPolicyDialog _urlPrivacyPolicy(String url) {
-        _url=url;
         return this;
     }
 
