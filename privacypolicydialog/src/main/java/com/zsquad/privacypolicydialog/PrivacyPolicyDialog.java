@@ -66,6 +66,16 @@ public class PrivacyPolicyDialog extends AlertDialog {
         return this;
     }
 
+    public PrivacyPolicyDialog _setMessage(int message) {
+        dialogtextView.setText(message);
+        return this;
+    }
+
+    public PrivacyPolicyDialog _setBrandName(int brandName) {
+        textViewBrand.setText(brandName);
+        return this;
+    }
+
     public PrivacyPolicyDialog _setBrandName(String brandName) {
         textViewBrand.setText(brandName);
         return this;
@@ -73,6 +83,11 @@ public class PrivacyPolicyDialog extends AlertDialog {
 
     public PrivacyPolicyDialog _urlPrivacyPolicy(String url) {
         _url=url;
+        return this;
+    }
+
+    public PrivacyPolicyDialog _setTitle(int text) {
+        dialogtitletextView.setText(text);
         return this;
     }
 
@@ -86,22 +101,10 @@ public class PrivacyPolicyDialog extends AlertDialog {
         return this;
     }
 
-    public PrivacyPolicyDialog _setMessage(int message) {
-        dialogtextView.setText(message);
-        return this;
-    }
-
-    public PrivacyPolicyDialog _setBrandName(int brandName) {
-        textViewBrand.setText(brandName);
-        return this;
-    }
 
 
 
-    public PrivacyPolicyDialog _setTitle(int text) {
-        dialogtitletextView.setText(text);
-        return this;
-    }
+
 
 
     public void _close() {
