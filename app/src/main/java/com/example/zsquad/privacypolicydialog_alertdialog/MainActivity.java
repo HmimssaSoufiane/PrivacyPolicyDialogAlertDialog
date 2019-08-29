@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             final PrivacyPolicyDialog _dialog = new PrivacyPolicyDialog(this);
             _dialog._setTitle("Privacy Policy").
                     _setMessage(R.string.dialogMessage).
-                    _setBrandName(" AraSof").
+                    _setBrandName("AraSof").
                     _urlPrivacyPolicy("Your privacy url ").
                     _btnContinueOnClickListener(new View.OnClickListener() {
                         @Override
