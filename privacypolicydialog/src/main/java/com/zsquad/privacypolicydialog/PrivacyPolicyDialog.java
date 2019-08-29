@@ -21,7 +21,7 @@ public class PrivacyPolicyDialog extends AlertDialog {
     private TextView dialogtitletextView;
     private TextView dialogtextView;
     private ImageView mIcon;
-    String _url;
+    private String _url;
 
     public PrivacyPolicyDialog(Context context) {
         super(context);
