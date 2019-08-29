@@ -1,6 +1,6 @@
 package com.example.zsquad.privacypolicydialog_alertdialog;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Main2Activity extends AppCompatActivity {
