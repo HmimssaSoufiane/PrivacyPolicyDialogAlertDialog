@@ -16,7 +16,7 @@
 # Step 2. Add the dependency
 ```
 	dependencies {
-	        implementation 'com.github.HmimssaSoufiane:PrivacyPolicyDialogAlertDialog:3.0.0'
+	        implementation 'com.github.HmimssaSoufiane:PrivacyPolicyDialogAlertDialog:4.0.0'
 		}
 ```
 # Step 2. Usage
